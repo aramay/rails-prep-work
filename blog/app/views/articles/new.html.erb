@@ -2,33 +2,4 @@
   new article
 </h1>
 
-<%= form_for :article, url: articles_path do |f| %>
-  <% if @article.errors.any? %>
-    <div id="errors">
-      <h2>
-        <%= pluralize(@article.errors.count, "error") %>
-        prohibited this article from being saved
-
-      </h2>
-      <ul>
-        <% @article.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
-
-    </div>
-  <% end %>
-  <p>
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :text %>
-    <%= f.text_area :text %>
-  </p>
-
-  <p>
-    <%= f.submit %>
-  </p>
-
-<% end %>
+<%= render 'form' %>
