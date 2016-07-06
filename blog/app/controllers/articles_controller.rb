@@ -5,6 +5,7 @@ class ArticlesController < ApplicationController
   end
 
   def show
+    # binding.pry
     @article = Article.find(params[:id])
   end
 
