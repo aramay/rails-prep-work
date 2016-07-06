@@ -8,6 +8,11 @@
   <%=@article.text  %>
 </p>
 
+<h2>Comments</h2>
+
+<%= render @article.comments %>
+
+
 <h2>Add Comment</h2>
   <%= form_for ([@article, @article.comments.build]) do |f| %>
     <p>
