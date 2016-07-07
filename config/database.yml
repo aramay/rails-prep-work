@@ -83,3 +83,10 @@ production:
   database: blog_production
   username: blog
   password: <%= ENV['BLOG_DATABASE_PASSWORD'] %>
+
+#test DB
+test:
+  adapter: sqlite3
+  database: db/test.sqlite3
+  pool: 5
+  timeout: 5000
