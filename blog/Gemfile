@@ -45,3 +45,5 @@ group :production do
   gem 'rails_12factor'
   gem 'pg'
 end
+
+gem 'ruby 2.2.5'
