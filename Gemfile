@@ -47,5 +47,5 @@ group :production do
   gem 'pg'
 end
 
-gem 'ruby 2.2.5'
+ruby '2.2.5'
 
