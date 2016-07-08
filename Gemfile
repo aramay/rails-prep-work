@@ -30,13 +30,13 @@ gem 'sqlite3'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'rspec', '~> 3.1'
+# gem 'rspec', '~> 3.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   #rspec setup
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 3.4'
   gem 'factory_girl_rails'
 end
 
@@ -46,6 +46,9 @@ group :test do
   gem 'capybara'
   gem 'guard-rspec'
   gem 'launchy'
+
+  gem 'shoulda-matchers', '~> 3.0', require: true
+  gem 'database_cleaner', '~> 1.5'
 end
 
 group :development do
