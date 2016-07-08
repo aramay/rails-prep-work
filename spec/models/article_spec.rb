@@ -1,3 +1,5 @@
+
+
 # spec/models/contact.rb
 require 'spec_helper'
 
