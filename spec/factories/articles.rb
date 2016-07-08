@@ -1,5 +1,7 @@
-# spec/factories/contacts.rb
+# spec/factories/article.rb
+
 require 'faker'
+# require 'rails_helper'
 
 FactoryGirl.define do
   factory :article do |f|
