@@ -8,7 +8,7 @@ FactoryGirl.define do
     # f.title "John"
     # f.text "Doe" Not a random data
 
-    f.title { Faker::Company.bs.title }
-    f.text { Faker::Hacker.say_something_smart.text }
+    f.title { Faker::Company.bs }
+    f.text { Faker::Hacker.say_something_smart }
   end
 end

@@ -7,9 +7,9 @@ require 'rails_helper'
     let(:title) {Article.new(title: "test blog")}
     let(:blog) {Article.new(title: "test blog", text: "will save this article")}
 
-    # it 'has a valid factory' do
-    #   FactoryGirl.create(:article).should be_valid
-    #   end
+    it 'has a valid factory' do
+      FactoryGirl.create(:article).should be_valid
+      end
     it "title minimum length is 5 chars" do
       has_title.save
       expect(has_title.errors[:title]).to include("is too short (minimum is 5 characters)")
